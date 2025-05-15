@@ -17,18 +17,65 @@
   </style>
 </head>
 <body class="bg-gray-100 text-gray-900 leading-relaxed font-light">
+    <nav id="navbar" class="navbar-fixed fixed top-0 w-full z-50 glass-effect py-4 px-6">
+    <div  class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <!-- Logo SVG con animación -->
+        <svg class="h-10 w-10 animate-pulse" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="#0033c7" stroke-width="2" />
+          <path d="M13 20L18 25L28 15" stroke="#0033c7" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span class="ml-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-indigo-500">SoftwareSolutionsCO</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#inicio" class="text-sm font-medium hover:text-indigo-600 transition">Inicio</a>
+        <a href="#servicios" class="text-sm font-medium hover:text-indigo-600 transition">Servicios</a>
+        <a href="#proceso" class="text-sm font-medium hover:text-indigo-600 transition">Proceso</a>
+        <a href="#beneficios" class="text-sm font-medium hover:text-indigo-600 transition">Beneficios</a>
+        <a href="#proyectos" class="text-sm font-medium hover:text-indigo-600 transition">Portfolio</a>
+        <!-- <a href="#testimonios" class="text-sm font-medium hover:text-indigo-600 transition">Testimonios</a> -->
+      </div>
+      <div>
+        <a href="https://wa.me/573019066143?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios" class="hidden md:inline-flex items-center justify-center h-10 px-6 rounded-full font-medium text-white bg-indigo-600 hover:bg-indigo-700 transform transition hover:-translate-y-0.5">Contactar</a>
+        <button id="menu-toggle" class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        
+
+
+      </div>
+    </div>
+    <!-- Menú móvil -->
+   
+  </nav>
     <header class="h-screen flex items-center relative overflow-hidden bg-white">
-        <!-- SVG como fondo -->
-        <svg class="absolute bottom-0 left-0 w-full z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#000b76" fill-opacity="0.6" d="M0,128L60,133.3C120,139,240,149,360,144C480,139,600,117,720,96C840,75,960,53,1080,53.3C1200,53,1320,75,1380,85.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>       </svg>
+       
+     <svg class="absolute bottom-0 left-0 w-full z-0"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <defs>
+              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#000b76;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#waveGradient)" d="M0,160L60,165.3C120,171,240,181,360,176C480,171,600,149,720,128C840,107,960,85,1080,85.3C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+              <animate attributeName="d" dur="20s" repeatCount="indefinite" values="M0,160L60,165.3C120,171,240,181,360,176C480,171,600,149,720,128C840,107,960,85,1080,85.3C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z;
+                      M0,160L60,150C120,140,240,100,360,100C480,100,600,140,720,160C840,180,960,140,1080,150C1200,160,1320,180,1380,190L1440,200L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z;
+                      M0,160L60,165.3C120,171,240,181,360,176C480,171,600,149,720,128C840,107,960,85,1080,85.3C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" />
+            </path>
+          </svg>
+      <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent "></div>
+
         
       
         <!-- Contenido -->
-        <div class="relative z-20 container mx-auto px-6 mb-16">
+        <div id="inicio" class="relative z-20 container mx-auto px-6 mb-16">
           <div class="inline-block bg-indigo-100 text-indigo-500 text-sm px-3 py-1 rounded-full mb-6 font-medium">Emprendimiento</div>
           <h1 class="text-6xl font-bold leading-tight mb-6 max-w-3xl">Soluciones que impulsan tu negocio</h1>
           <p class="text-xl text-slate-500 max-w-xl mb-10">Transforma tu idea en una solución digital efectiva</p>
-          <div class="flex flex-wrap gap-4">
+          <div class="flex flex-wrap gap-4 mb-16">
             <a href="https://wa.me/573019066143?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios" class="inline-flex items-center justify-center h-14 px-8 rounded-lg font-medium text-white bg-indigo-500 hover:bg-indigo-600 transform transition hover:-translate-y-0.5">Consulta gratis</a>
             <a href="#servicios" class="inline-flex items-center justify-center h-14 px-8 rounded-lg font-medium border border-gray-200 text-gray-900 hover:bg-gray-100 transform transition hover:-translate-y-0.5">Ver servicios</a>
           </div>
@@ -42,22 +89,22 @@
       <p class="text-lg text-slate-500 max-w-xl mx-auto">Soluciones personalizadas que se adaptan a tus necesidades.</p>
     </div>
     <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6">
-        <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+        <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 cursor-pointer">
             <div class="w-16 h-16 flex items-center justify-center bg-indigo-100 text-indigo-500 rounded-xl mb-6 text-2xl">🌐</div>
             <h3 class="text-2xl font-semibold mb-4">Creación de pagina web a la medida</h3>
             <p>Diseñamos páginas de aterrizaje efectivas y atractivas que capturan la atención de tus visitantes.</p>
           </div>
-        <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+        <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 cursor-pointer">
         <div class="w-16 h-16 flex items-center justify-center bg-indigo-100 text-indigo-500 rounded-xl mb-6 text-2xl">🤖</div>
         <h3 class="text-2xl font-semibold mb-4">Implementación de chatbot para WhatsApp</h3>
         <p>Integramos un chatbot automatizado en tu cuenta de WhatsApp para mejorar la atención al cliente y agilizar la comunicación con tus usuarios</p>
       </div>
-      <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 cursor-pointer">
         <div class="w-16 h-16 flex items-center justify-center bg-indigo-100 text-indigo-500 rounded-xl mb-6 text-2xl">🖥️</div>
         <h3 class="text-2xl font-semibold mb-4">Desarrollo de aplicaciones de escritorio</h3>
         <p>Creamos aplicaciones de escritorio personalizadas que se adaptan a las necesidades de tu negocio, con rendimiento óptimo y una interfaz intuitiva</p>
       </div>
-      <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-10 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 cursor-pointer">
         <div class="w-16 h-16 flex items-center justify-center bg-indigo-100 text-indigo-500 rounded-xl mb-6 text-2xl">📱</div>
         <h3 class="text-2xl font-semibold mb-4">Creación de aplicaciones para móviles</h3>
         <p>Desarrollamos apps móviles intuitivas, que se adaptan a las necesidades de tu negocio. Te acompañamos en cada paso para que conectes con tus clientes desde la palma de su mano.
@@ -68,7 +115,7 @@
     </div>
   </section>
 
-  <section class="bg-white py-32">
+  <section id="proceso" class="bg-white py-32">
     <div class="text-center mb-20">
         <h2 class="text-4xl font-bold mb-4">Nuestro proceso</h2>
         <p class="text-lg text-slate-500 max-w-xl mx-auto">Una metodología estructurada para garantizar el éxito en cada proyecto.</p>
@@ -98,38 +145,38 @@
     </div>
   </section>
 
-  <section class="py-32 bg-gray-100">
+  <section id="beneficio" class="py-32 bg-gray-100">
     <div class="text-center mb-20">
       <h2 class="text-4xl font-bold mb-4">Beneficios de trabajar con nosotros</h2>
       <p class="text-lg text-slate-500 max-w-xl mx-auto">Al elegirnos, obtienes más que solo desarrollo de software. Te llevas una experiencia completa enfocada en resultados.</p>
     </div>
     <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6">
-      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 ">
         <div class="text-indigo-500 text-3xl mb-4">🚀</div>
         <h3 class="text-xl font-semibold mb-2">Impulso al crecimiento</h3>
         <p>Diseñamos soluciones que ayudan a optimizar procesos internos.</p>
       </div>
-      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 ">
         <div class="text-indigo-500 text-3xl mb-4">✅</div>
         <h3 class="text-xl font-semibold mb-2">Soluciones personalizadas</h3>
         <p>Nos adaptamos 100% a las necesidades de tu negocio.</p>
       </div>
-      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 ">
         <div class="text-indigo-500 text-3xl mb-4">🤝</div>
         <h3 class="text-xl font-semibold mb-2">Acompañamiento personalizado</h3>
         <p>Te asesoramos en cada paso del proyecto para asegurar que tu visión se haga realidad.</p>
       </div>
-      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 ">
         <div class="text-indigo-500 text-3xl mb-4">🤓</div>
         <h3 class="text-xl font-semibold mb-2"> Facilidad de uso</h3>
         <p>Pensamos en el usuario final para que el aplicativo sea más fácil de usar.</p>
       </div>
-      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 ">
         <div class="text-indigo-500 text-3xl mb-4">🔎</div>
         <h3 class="text-xl font-semibold mb-2"> Transparencia total</h3>
         <p>Tendrás visibilidad completa sobre el progreso y los costos.</p>
       </div>
-      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2">
+      <div class="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-2xl transform transition hover:-translate-y-2 ">
         <div class="text-indigo-500 text-3xl mb-4">🧑‍💼</div>
         <h3 class="text-xl font-semibold mb-2">Capacitación incluida</h3>
         <p>Enseñamos a tu equipo cómo sacarle el máximo provecho.</p>
@@ -138,11 +185,7 @@
   </section>
    
 
-  <a href="https://wa.me/573019066143?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios" class="fixed w-[60px] h-[60px] bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full text-3xl z-[1000] flex justify-center items-center shadow-lg transition-transform hover:scale-110">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="129" viewBox="0 0 256 258"><defs><linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/></svg>
 
-</a>
 
  
 
@@ -158,4 +201,20 @@
   </footer>
 
 </body>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.fade-in-up').forEach(element => {
+    observer.observe(element);
+  });
+</script>
+
 </html>
+
+
