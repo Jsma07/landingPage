@@ -33,7 +33,7 @@
         <a href="#proceso" class="text-sm font-medium hover:text-indigo-600 transition">Proceso</a>
         <a href="#beneficios" class="text-sm font-medium hover:text-indigo-600 transition">Beneficios</a>
 <!--         <a href="#proyectos" class="text-sm font-medium hover:text-indigo-600 transition">Portfolio</a>
-        <!-- <a href="#testimonios" class="text-sm font-medium hover:text-indigo-600 transition">Testimonios</a> --> -->
+        <!-- <a href="#testimonios" class="text-sm font-medium hover:text-indigo-600 transition">Testimonios</a> --> 
       </div>
       <div>
         <a href="https://wa.me/573019066143?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios" class="hidden md:inline-flex items-center justify-center h-10 px-6 rounded-full font-medium text-white bg-indigo-600 hover:bg-indigo-700 transform transition hover:-translate-y-0.5">Contactar</a>
@@ -42,6 +42,15 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        <!-- Menú móvil -->
+<div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4">
+  <a href="#inicio" class="block text-sm font-medium hover:text-indigo-600 transition">Inicio</a>
+  <a href="#servicios" class="block text-sm font-medium hover:text-indigo-600 transition">Servicios</a>
+  <a href="#proceso" class="block text-sm font-medium hover:text-indigo-600 transition">Proceso</a>
+  <a href="#beneficios" class="block text-sm font-medium hover:text-indigo-600 transition">Beneficios</a>
+  <a href="https://wa.me/573019066143?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios" class="inline-flex items-center justify-center h-10 px-6 rounded-full font-medium text-white bg-indigo-600 hover:bg-indigo-700">Contactar</a>
+</div>
+
 
         
 
@@ -197,6 +206,16 @@
     </div>
   </footer>
 
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+  
 </body>
 
 
